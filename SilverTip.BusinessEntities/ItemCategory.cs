@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Boughtleaf.BusinessEntities
 {
-    public class ItemCategories
+    public class ItemCategory
     {
         [Key]
         public int Id { get; set; }

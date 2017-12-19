@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Boughtleaf.BusinessEntities
 {
-    public class FundModes
+    public class FundMode
     {
         [Key]
         public int Id { get; set; }

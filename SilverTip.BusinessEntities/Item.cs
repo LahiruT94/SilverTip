@@ -8,12 +8,12 @@ using System.Threading.Tasks;
 
 namespace Boughtleaf.BusinessEntities
 {
-    public class Items
+    public class Item
     {
         [Key]
         public int Id { get; set; }
 
         [ForeignKey("ItemCategoryId")]
-        public virtual ICollection<ItemCategories> ItemCategories { get; set; }
+        public virtual ICollection<ItemCategory> ItemCategories { get; set; }
     }
 }

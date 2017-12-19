@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Boughtleaf.BusinessEntities
 {
-    public class Funds
+    public class Fund
     {
         [Key]
         public int Id { get; set; }
@@ -21,6 +21,6 @@ namespace Boughtleaf.BusinessEntities
         public int AccountNumber { get; set; }
         public String Branch { get; set; }
         [ForeignKey("BankId")]
-        public Banks Bank { get; set; }
+        public Bank Bank { get; set; }
     }
 }

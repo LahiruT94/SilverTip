@@ -1,5 +1,6 @@
 namespace SilverTip.BusinessEntities
 {
+    using Boughtleaf.BusinessEntities;
     using System;
     using System.Data.Entity;
     using System.Linq;
@@ -25,6 +26,14 @@ namespace SilverTip.BusinessEntities
         public virtual DbSet<SupplierType> SupplierTypes { get; set; }
         public virtual DbSet<Route> Routes { get; set; }
         public virtual DbSet<LeafType> LeafTypes { get; set; }
+        public virtual DbSet<Bank> Banks { get; set; }
+        public virtual DbSet<Fund> Funds { get; set; }
+        public virtual DbSet<FundMode> FundModes { get; set; }
+        public virtual DbSet<Item> Items { get; set; }
+        public virtual DbSet<ItemCategory> ItemCategories { get; set; }
+        public virtual DbSet<PaymentType> PaymentTypes { get; set; }
+        public virtual DbSet<SuppierFund> SupplierFunds { get; set; }
+        public virtual DbSet<SupplierPaymntType> SupplierPaymentTypes { get; set; }
     }
 
     //public class MyEntity

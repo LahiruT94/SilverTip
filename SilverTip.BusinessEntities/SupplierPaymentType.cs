@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Boughtleaf.BusinessEntities
 {
-    class SupplierPaymntTypes
+    public class SupplierPaymntType
     {
         [Key]
         public int Id { get; set; }
@@ -19,7 +19,7 @@ namespace Boughtleaf.BusinessEntities
         public Boolean IsActive { get; set; }
         public String Code { get; set; }
         [ForeignKey("PaymentTypeId")]
-        public virtual PaymentTypes PayementType { get; set; }
+        public virtual PaymentType PayementType { get; set; }
 
         [ForeignKey("SupplierTypeId")]
         public virtual Supplier Supplier { get; set; }
